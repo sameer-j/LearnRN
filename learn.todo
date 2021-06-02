@@ -1,0 +1,17 @@
+Todo:
+  ✔ Convert class component to functional components @done(21-03-25 19:58)
+  ☐ Checkbox select/deselect all
+  ☐ Stack navigator from home
+
+Learn:
+  ☐ Pure Component (Functional and Class)
+  ☐ Arrow function (why??!!!!)
+  ☐ Context bind
+  ☐ Currying function
+
+See again later:
+  ☐ https://codeburst.io/when-to-use-component-or-purecomponent-a60cfad01a81
+  ☐ https://reactjs.org/docs/hooks-intro.html
+  ✔ https://blog.logrocket.com/react-pure-components-functional/ @done(21-06-02 20:06)
+  ✔ https://djoech.medium.com/why-do-you-need-to-import-react-in-functional-components-7385e4329ffb @done(21-06-02 21:01)
+  ✔ https://stackoverflow.com/questions/66533024/how-to-use-new-jsx-transform-of-react-17-with-react-native-0-64-0-rc4 @done(21-06-02 21:01)
