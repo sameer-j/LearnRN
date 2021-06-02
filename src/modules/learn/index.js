@@ -1,30 +1,43 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { View, Text, Button, ScrollView, StyleSheet } from 'react-native';
+import card from '../card';
 import Card from '../card';
 
 const Learn = () => {
   const [counter, setCounter] = useState(0);
+  const cardCounter = useCallback(() => {
+    setCounter(count => count + 2);
+  }, []);
   return (
-    <View style={{ flex: 1 }}>
+    <View>
       <Text>Test</Text>
       <Button
         title={'Counter:' + counter}
         onPress={() => setCounter(counter + 1)}
       />
       <Button title="Reset Counter" onPress={() => setCounter(0)} />
-      <ScrollView horizontal style={styles.container}>
-        <Card text="Pure Component: Color shouldnt change on Counter update" />
+      <Text>Pure Component: useMemo</Text>
+      <View style={styles.container}>
+        <Card text="Color shouldnt change on Counter update, without counter prop" />
+        <Card text="Card with counter prop" counter={counter} />
+      </View>
+      <Text>Pure Component: useCallback (counter+2)</Text>
+      <View style={styles.container}>
+        <Card text="Card" onPress={cardCounter} />
         <Card
-          text="Pure Component: Color should change on Counter update as counter is passed as prop"
+          text="Card with counter prop"
           counter={counter}
+          onPress={cardCounter}
         />
-      </ScrollView>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    flexDirection: 'row',
+  },
 });
 
 export default Learn;

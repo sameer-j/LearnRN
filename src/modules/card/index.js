@@ -1,9 +1,10 @@
 import { memo } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-const Card = ({ text, counter }) => {
+const Card = ({ text, onPress }) => {
   return (
-    <View
+    <TouchableOpacity
+      onPress={onPress}
       style={[
         styles.card,
         {
@@ -11,7 +12,7 @@ const Card = ({ text, counter }) => {
         },
       ]}>
       <Text>{text}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -27,7 +28,7 @@ function getRandomColor() {
 const styles = StyleSheet.create({
   card: {
     height: 80,
-    width: '20%',
+    flex: 1,
     margin: 5,
     padding: 5,
   },
