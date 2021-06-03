@@ -1,7 +1,8 @@
-import Learn from './modules/learn';
+import 'react-native-gesture-handler';
+import Navigator from './navigators';
 
 const App = () => {
-  return <Learn />;
+  return <Navigator />;
 };
 
 export default App;

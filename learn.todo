@@ -1,7 +1,9 @@
 Todo:
-  ✔ Convert class component to functional components @done(21-03-25 19:58)
   ☐ Checkbox select/deselect all
-  ☐ Stack navigator from home
+  ☐ Navigation: route params
+  ✔ Navigation: Nested @done(21-06-03 22:28)
+  ✔ Convert class component to functional components @done(21-03-25 19:58)
+  ✔ Navigation: basic @done(21-06-03 20:31)
   ☐ Convert to tsx (typescript)
 
 Learn:
@@ -14,6 +16,7 @@ See again later:
   ☐ https://codeburst.io/when-to-use-component-or-purecomponent-a60cfad01a81
   ☐ https://reactjs.org/docs/hooks-intro.html
   ☐ https://github.com/typescript-cheatsheets/react, https://github.com/typescript-cheatsheets/react-native
+  ☐ https://medium.com/swlh/how-to-use-flatlist-with-hooks-in-react-native-and-some-optimization-configs-7bf4d02c59a0
   ✔ https://blog.logrocket.com/react-pure-components-functional/ @done(21-06-02 20:06)
   ✔ https://djoech.medium.com/why-do-you-need-to-import-react-in-functional-components-7385e4329ffb @done(21-06-02 21:01)
   ✔ https://stackoverflow.com/questions/66533024/how-to-use-new-jsx-transform-of-react-17-with-react-native-0-64-0-rc4 @done(21-06-02 21:01)
