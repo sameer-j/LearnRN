@@ -1,16 +1,21 @@
 Todo:
-  ☐ Checkbox select/deselect all
-  ☐ Navigation: route params
-  ✔ Navigation: Nested @done(21-06-03 22:28)
   ✔ Convert class component to functional components @done(21-03-25 19:58)
-  ✔ Navigation: basic @done(21-06-03 20:31)
+  ☐ Clock with and without setInterval on same screen
+  ☐ Stopwatch in background
+  ☐ Perfect clock, without delay (setInterval/setTimeout can have delays)
+  ☐ Checkbox select/deselect all
   ☐ Convert to tsx (typescript)
 
 Learn:
   ✔ Pure Component @done(21-06-02 22:41)
-  ☐ Arrow function (why??!!!!)
-  ☐ Context bind
-  ☐ Currying function
+  ☐ Navigation:
+     Navigation:
+      ✔ basic @done(21-06-04 20:07)
+      ✔ nested (stack and tab) @done(21-06-04 20:07)
+      ☐ route params
+      ☐ onfocus/onblur
+  ☐ Class components and Lifecycle
+  ☐ useEffect and how can we use it for componentDidMount, componentDidUpdate and componentWillUnmount
 
 See again later:
   ☐ https://codeburst.io/when-to-use-component-or-purecomponent-a60cfad01a81
