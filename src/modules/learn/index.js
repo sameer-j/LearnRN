@@ -15,6 +15,10 @@ const Home = ({ navigation }) => {
         title="RN Checkbox list test"
         onPress={() => navigation.navigate('RNCheckboxList')}
       />
+      <Button
+        title="Flex Box Practice"
+        onPress={() => navigation.navigate('FlexBox')}
+      />
     </View>
   );
 };
