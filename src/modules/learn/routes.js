@@ -20,6 +20,8 @@ const LearnRoutes = () => {
         name="Dummy"
         component={DummyScreen}
         options={{ title: 'Dummy Screen' }}
+        initialParams={{ count: 1 }}
+      />
       <Stack.Screen
         name="RNCheckboxList"
         component={RNCheckboxList}
