@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from '.';
 import DummyScreen from './components/dummyScreen';
 import LearnPureComponent from './components/pureComponent';
+import RNCheckboxList from './components/rnCheckboxList';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,11 @@ const LearnRoutes = () => {
         name="Dummy"
         component={DummyScreen}
         options={{ title: 'Dummy Screen' }}
+      <Stack.Screen
+        name="RNCheckboxList"
+        component={RNCheckboxList}
+        options={{ title: 'RN Checkbox list test' }}
+      />
       />
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>

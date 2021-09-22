@@ -11,6 +11,10 @@ const Home = ({ navigation }) => {
         title="Dummy Screen"
         onPress={() => navigation.navigate('Dummy')}
       />
+      <Button
+        title="RN Checkbox list test"
+        onPress={() => navigation.navigate('RNCheckboxList')}
+      />
     </View>
   );
 };
