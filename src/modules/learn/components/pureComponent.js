@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-import Card from '../card';
+import Card from '../../card';
 
 const LearnPureComponent = () => {
   const [counter, setCounter] = useState(0);

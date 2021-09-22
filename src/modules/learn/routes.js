@@ -1,8 +1,8 @@
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from '.';
-import DummyScreen from './dummyScreen';
-import LearnPureComponent from './pureComponent';
+import DummyScreen from './components/dummyScreen';
+import LearnPureComponent from './components/pureComponent';
 
 const Stack = createStackNavigator();
 
