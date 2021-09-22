@@ -1,8 +1,11 @@
 ## Basics
+
 - Passing props is how information flows in React apps, from parents to children.
 - `onClick={() => console.log('click')}`, we’re passing a function as the onClick prop. React will only call this function after a click. Forgetting `() => `and writing `onClick={console.log('click')}` is a common mistake, and **would fire every time the component re-renders**.
+
 ## Pure Components
-- React components can have state by setting `this.state` in their constructors. 
+
+- React components can have state by setting `this.state` in their constructors.
 - `this.state` should be considered as private to a React component that it’s defined in. Hence, cant be accessed by derived class
 - All React component classes that have a constructor should start with a `super(props)` call.
 - When you call setState in a component, React automatically updates the component and the **child components** inside of it too.
@@ -15,7 +18,13 @@
 - state change detection is easier when we just need to compare the object reference instead of checking the whole object
 - it also allows to see the history?
 
+## PureComponents
+
 If you’re creating new functions, objects, or arrays in the render method you’re (probably) doing it wrong.  
 Refer: [PureComponent](https://codeburst.io/when-to-use-component-or-purecomponent-a60cfad01a81)
 
+## Misc Notes
 
+- Destructuring incoming props:
+  - Why not?: makes it easier to differentiate between local variable and incoming props
+  - Why to?: assign default values while destructuring
