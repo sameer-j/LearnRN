@@ -4,4 +4,13 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
   },
+  overrides: [
+    {
+      files: ['**/*.test.js', 'jest.setup.js'],
+      env: {
+        jest: true,
+      },
+      plugins: ['jest'],
+    },
+  ],
 };
