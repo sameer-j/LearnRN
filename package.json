@@ -5,9 +5,12 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "web": "react-scripts start",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "build-web": "webpack --mode production",
+    "start-web": "webpack-dev-server --config ./webpack.config.js --mode development"
   },
   "dependencies": {
     "@react-native-community/checkbox": "^0.5.8",
@@ -16,6 +19,7 @@
     "@react-navigation/material-bottom-tabs": "^5.3.15",
     "@react-navigation/native": "^5.9.4",
     "@react-navigation/stack": "^5.14.5",
+    "babel-loader": "^8.2.2",
     "react": "17.0.1",
     "react-dom": "^17.0.2",
     "react-native": "0.64.1",
@@ -26,28 +30,31 @@
     "react-native-screens": "^3.3.0",
     "react-native-vector-icons": "^8.1.0",
     "react-native-web": "^0.17.5",
-    "rn-checkbox-list": "^0.4.0"
+    "rn-checkbox-list": "^0.4.0",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.64.5",
     "@types/react-test-renderer": "^16.9.2",
     "babel-jest": "^26.6.3",
-    "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-react-native-web": "^0.17.5",
     "eslint": "^7.14.0",
-    "jest": "^26.6.3",
+    "html-webpack-plugin": "^5.3.2",
     "metro-react-native-babel-preset": "^0.64.0",
     "react-scripts": "^4.0.3",
     "react-test-renderer": "17.0.1",
     "typescript": "^3.8.3",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.55.1",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.3.0"
+    "url-loader": "^4.1.1"
   },
   "resolutions": {
     "@types/react": "^17"
@@ -59,6 +66,18 @@
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!@react-native|react-native|react-native-vector-icons|@react-navigation/.*|rn-checkbox-list)"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }
