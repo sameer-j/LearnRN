@@ -4,7 +4,8 @@ Todo:
   ☐ Stopwatch in background
   ☐ Perfect clock, without delay (setInterval/setTimeout can have delays)
   ☐ Checkbox select/deselect all
-  ☐ Convert to tsx (typescript)
+  ✘ Convert to tsx (typescript) @cancelled(21-10-01 20:04)
+  ☐ useInterval hook to dynamically change delay
 
 Learn:
   ✔ Pure Component @done(21-06-02 22:41)
@@ -14,7 +15,7 @@ Learn:
       ✔ nested (stack and tab) @done(21-06-04 20:07)
       ☐ route params
       ☐ onfocus/onblur
-  ☐ Class components and Lifecycle
+  ✘ Class components and Lifecycle @cancelled(21-10-01 20:04)
   ☐ useEffect and how can we use it for componentDidMount, componentDidUpdate and componentWillUnmount
 
 See again later:

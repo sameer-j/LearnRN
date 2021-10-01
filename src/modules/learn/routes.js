@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 
 const LearnRoutes = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="UseRef">
       <Stack.Screen
         name="Pure Components"
         component={LearnPureComponent}
