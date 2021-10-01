@@ -19,6 +19,10 @@ const Home = ({ navigation }) => {
         title="Flex Box Practice"
         onPress={() => navigation.navigate('FlexBox')}
       />
+      <Button
+        title="useRef Example"
+        onPress={() => navigation.navigate('UseRef')}
+      />
     </View>
   );
 };

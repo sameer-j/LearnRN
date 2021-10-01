@@ -5,6 +5,7 @@ import DummyScreen from './components/dummyScreen';
 import FlexBox from './components/flexBoxPractice';
 import LearnPureComponent from './components/pureComponent';
 import RNCheckboxList from './components/rnCheckboxList';
+import UseRefExample from './components/useRefExample';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,11 @@ const LearnRoutes = () => {
         name="FlexBox"
         component={FlexBox}
         options={{ title: 'Flex Box Practice' }}
+      />
+      <Stack.Screen
+        name="UseRef"
+        component={UseRefExample}
+        options={{ title: 'useRef Example' }}
       />
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
