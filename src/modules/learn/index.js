@@ -23,6 +23,10 @@ const Home = ({ navigation }) => {
         title="useRef Example"
         onPress={() => navigation.navigate('UseRef')}
       />
+      <Button
+        title="Extended useState hook example"
+        onPress={() => navigation.navigate('ExtendedUseStateExample')}
+      />
     </View>
   );
 };

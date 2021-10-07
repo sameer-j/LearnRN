@@ -2,6 +2,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from '.';
 import DummyScreen from './components/dummyScreen';
+import ExtendedUseStateExample from './components/extendedUseStateExample';
 import FlexBox from './components/flexBoxPractice';
 import LearnPureComponent from './components/pureComponent';
 import RNCheckboxList from './components/rnCheckboxList';
@@ -11,7 +12,7 @@ const Stack = createStackNavigator();
 
 const LearnRoutes = () => {
   return (
-    <Stack.Navigator initialRouteName="UseRef">
+    <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
         name="Pure Components"
         component={LearnPureComponent}
@@ -37,6 +38,11 @@ const LearnRoutes = () => {
         name="UseRef"
         component={UseRefExample}
         options={{ title: 'useRef Example' }}
+      />
+      <Stack.Screen
+        name="ExtendedUseStateExample"
+        component={ExtendedUseStateExample}
+        options={{ title: 'Extended useState hook example' }}
       />
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
