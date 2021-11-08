@@ -1,4 +1,4 @@
 - Why to use key in loop elements or lists?
-- flex?
 - Performance tooling
--
+- functional vs class components?
+  - class mutates state?

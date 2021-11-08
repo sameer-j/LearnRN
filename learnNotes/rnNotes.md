@@ -23,6 +23,24 @@
 If you’re creating new functions, objects, or arrays in the render method you’re (probably) doing it wrong.  
 Refer: [PureComponent](https://codeburst.io/when-to-use-component-or-purecomponent-a60cfad01a81)
 
+## Notifications
+
+- Two types: local and remote
+- remote options: apple, expo, firebase
+- locate notifications require various permissions to be enabled at android manifest level to work correctly
+- channel is important, without channel notifications wont work
+- Common problems with local:
+  - Not notifying as per schedule
+  - schedule message cannot be change for each new message
+  - scheduled notifications can stop working if app is swiped up or killed because of BATTERY OPTIMIZATIONS by android and device OEMs
+- Remote notifications:
+  - requires firebase configuration setup at android level
+  - notification can be received without any package installed at js side, but to do anything with the received notification, some notification package is needed
+  - remote notifications will not be received without internet
+  - remote notifications can wake up the app and a headless task can be triggered, even when app is swiped up or killed
+  - remote notifications can hence be used to schedule timely recurring notifications with different messages. For each remote notification received, just trigger a local notification
+  -
+
 ## Misc Notes
 
 - Destructuring incoming props:
