@@ -39,7 +39,7 @@ Refer: [PureComponent](https://codeburst.io/when-to-use-component-or-purecompone
   - remote notifications will not be received without internet
   - remote notifications can wake up the app and a headless task can be triggered, even when app is swiped up or killed
   - remote notifications can hence be used to schedule timely recurring notifications with different messages. For each remote notification received, just trigger a local notification
-  -
+  - If background restriction is configured, remote notification will not get delivered if the app is in background
 
 ## Misc Notes
 
