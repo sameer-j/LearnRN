@@ -2,3 +2,9 @@
 - Performance tooling
 - functional vs class components?
   - class mutates state?
+- Should I use expo?
+- JSI vs bridge
+- Fabric
+- react native windows (desktop apps)
+- codespace
+  - 
